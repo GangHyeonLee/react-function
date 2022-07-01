@@ -1,0 +1,312 @@
+/* 초기설정 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead,  tr,  th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu,
+nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+/* 초기설정 완료 */
+
+/* 고정 네비게이션에 가려지는 컨텐츠영역 밀어주기 */
+body {
+    padding-top: 55px;
+}
+
+#nav_logo {
+    padding-left: 38%;
+}
+
+#main_slideImg {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    /* 사진 크기 고정값 */
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    margin: 30px 0;
+}
+
+/* 카테고리 */
+
+#category_menu {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#category_menu img {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.category_menu_label {
+    text-align: center;
+}
+
+.category_atag{
+    text-decoration: none !important;
+    color: rgb(60, 60, 60);
+}
+
+.category_atag:hover {
+    color: salmon;
+}
+
+.category_board {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.category_h {
+    text-align: center;
+}
+
+.category_a, .category_b {
+    list-style: none;
+    border: solid 1px gray;
+    width: 25%;
+    height: 35px;
+    float: left;
+    padding-top: 7px;
+}
+
+.category_a:hover, .category_b:hover {
+    background-color: lemonchiffon;
+}
+
+.category_pd_name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.category_pd_brief, .category_pd_price {
+    text-align: center;
+}
+
+.category_img_size {
+    width: 100%;
+    height: 100%;
+}
+
+/* category 끝 */
+
+
+/* 제품상세(detail_item) 시작 */
+
+.detail_item_img {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.detail_item_pd_name,
+.detail_item_pd_price,
+.detail_item_pd_quantity {
+    padding: 0 15px;
+}
+
+.price, .quantity {
+    padding: 0 15px;
+    width: 100px;
+    text-align: left;
+}
+
+.quantity_select {
+    width: 200px;
+    height: 30px;
+}
+
+/* detail_item 끝 */
+
+/* login */
+
+.login_header h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* 회 원 가 입 */
+.signup {
+    margin-top: 5%;
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.signup_board_outside {
+    border: 2px solid lightgrey;
+    width: 70%;
+    height: 800px;
+}
+
+.signup_board_inside {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.signup_id1 {
+    display: inline;
+    width: 50%;
+}
+
+.signup_id2 {
+    display: inline;
+}
+
+.signup_pw1 {
+    display: inline;
+    width: 50%;
+}
+
+.signup_pw2 {
+    display: inline;
+}
+    
+.signup_signin{
+    text-align: center;
+}
+
+
+/* 회 원 가 입 끝 */
+
+
+/* 반응형 화면 비율 조정 */
+/* 스마트폰 세로 320px */
+
+/* 576px 미만 검색창 크기 조정 */
+#nav_searchBar {
+    width: 75%;
+    display: inline;
+}
+
+#nav_searchButton {
+    display: inline;
+    float: right;
+    margin-right: 10%;
+}
+
+
+/* 스마트폰 가로 */
+@media screen and (min-width: 576px) {
+    #nav_logo {
+        padding-left: 45%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* 타블렛 */
+    #nav_logo {
+        padding-left: 30px;
+    }
+
+    #bs-example-navbar-collapse-1 {
+        float: right;
+    }
+
+    /* 768px 이상 검색창 크기 조정 */
+    #nav_searchBar {
+        width: 70%;
+        display: inline;
+    }
+
+    #nav_searchButton {
+        display: inline;
+        float: right;
+        margin-right: 5%;
+    }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 992px) {
+}
+
+/* 큰 데스크탑 */
+@media screen and (min-width: 1200px) {
+}
