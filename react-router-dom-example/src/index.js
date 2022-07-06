@@ -36,7 +36,7 @@ function App(){
   return(
     <div>
       <h1>Hello React Router Dom</h1>
-      <ul cl>
+      <ul>
         <li><NavLink to='/'>HOME</NavLink></li>
         <li><NavLink to='/topics'>Topics</NavLink></li>
         <li><NavLink to='/contact'>Contact</NavLink></li>
@@ -55,5 +55,6 @@ function App(){
 //ReactDOM.render(<App />,document.getElementById('root'));
 // ReactDOM.render(<BrowserRouter><App /></BrowserRouter>,document.getElementById('root'));
 ReactDOM.render(<HashRouter><App /></HashRouter>,document.getElementById('root'));
+//리액트돔의 역할이 npm 스타트 할때 해당 명령된 js를 열어주는 역할을 한다고보면됌. 위에있는 코드를 다른 js에 사용하면 그 js가 열림.
 
 reportWebVitals();
